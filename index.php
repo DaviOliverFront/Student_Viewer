@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Olá, Mundo!</h1>
+
+    <?php 
+        echo "Olá, Mundo!";
+    ?>
 </body>
 </html>

@@ -1,72 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Student Viewer - Visualizando o futuro da educação!</title>
-<link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css ">
-<link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-<div class="sidebar">
-<nav class="nav flex-column">
-<div class="header-sidebar text-center">
-<img src="./assets/img/android-chrome-192x192.png" id="img_sv">
-<p id="sub-title">Student Viewer</p>
-</div>
-<a class="nav-link" href="#" data-page="inicio">
-<span class="icon">
-<i class="bi bi-house-door-fill"></i>
-</span>
-<span class="descricao">Painel Inicial</span>
-</a>
-<a class="nav-link" href="#" data-page="turmas">
-<span class="icon">
-<i class="bi bi-person-workspace"></i>
-</span>
-<span class="descricao">Minhas Turmas</span>
-</a>
-<a class="nav-link" href="#" data-page="alunos">
-<span class="icon">
-<i class="bi bi-people-fill"></i>
-</span>
-<span class="descricao">Meus Alunos</span>
-</a>
-<a class="nav-link" href="#" data-page="frequencia">
-<span class="icon">
-<i class="bi bi-list-check"></i>
-</span>
-<span class="descricao">Frequência</span>
-</a>
-<a class="nav-link" href="#" data-page="lembretes">
-<span class="icon">
-<i class="bi bi-bell-fill"></i>
-</span>
-<span class="descricao">Lembretes</span>
-</a>
-<a class="nav-link" id="footer-icon" href="#" data-page="config">
-<span class="icon">
-<i class="bi bi-gear"></i>
-</span>
-<span class="descricao">Configurações</span>
-</a>
-<a class="nav-link" href="#" data-page="sair">
-<span class="icon">
-<i class="bi bi-box-arrow-left"></i>
-</span>
-<span class="descricao">Sair</span>
-</a>
-</nav>
-</div>
-<main class="main-content h-100" id="conteudo">
-<h1>Olá,mundo!</h1>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quibusdam autem at harum eligendi omnis eos adipisci qui. Culpa praesentium corporis dolores delectus assumenda placeat impedit, suscipit minus provident velit.
-</p>
-</main>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-<script src="./assets/js/menu.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Viewer - Visualizando o futuro da educação!</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css ">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <nav class="nav flex-column">
+            <div class="header-sidebar text-center">
+                <img src="android-chrome-192x192.png" id="img_sv">
+                <p id="sub-title">Student Viewer</p>
+            </div>
+            <a class="nav-link" href="#" data-page="inicio">
+                <span class="icon">
+                    <i class="bi bi-house-door-fill"></i>
+                </span>
+                <span class="descricao">Painel Inicial</span>
+            </a>
+            <a class="nav-link" href="#" data-page="turmas">
+                <span class="icon">
+                    <i class="bi bi-person-workspace"></i>
+                </span>
+                <span class="descricao">Minhas Turmas</span>
+            </a>
+            <a class="nav-link" href="#" data-page="alunos">
+                <span class="icon">
+                    <i class="bi bi-people-fill"></i>
+                </span>
+                <span class="descricao">Meus Alunos</span>
+            </a>
+            <a class="nav-link" href="#" data-page="frequencia">
+                <span class="icon">
+                    <i class="bi bi-list-check"></i>
+                </span>
+                <span class="descricao">Frequência</span>
+            </a>
+            <a class="nav-link" href="#" data-page="lembretes">
+                <span class="icon">
+                    <i class="bi bi-bell-fill"></i>
+                </span>
+                <span class="descricao">Lembretes</span>
+            </a>
+            <a class="nav-link" id="footer-icon" href="#" data-page="config">
+                <span class="icon">
+                    <i class="bi bi-gear"></i>
+                </span>
+                <span class="descricao">Configurações</span>
+            </a>
+            <a class="nav-link" href="#" data-page="sair">
+                <span class="icon">
+                    <i class="bi bi-box-arrow-left"></i>
+                </span>
+                <span class="descricao">Sair</span>
+            </a>
+        </nav>
+    </div>
+    <main class="main-content h-100" id="conteudo">
+        <div class="mb-5 d-flex justify-content-end">
+            <button class="btn btn-primary nav-item">
+                <a href="login.html" id="login" class="text-white text-decoration-none">
+                    Realize seu Login Aqui
+                </a>
+            </button>
+        </div>
+        <div>
+            <h1>Olá,mundo!</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quibusdam autem at harum eligendi omnis
+                eos
+                adipisci qui. Culpa praesentium corporis dolores delectus assumenda placeat impedit, suscipit minus
+                provident velit.
+            </p>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <script src="menu.js"></script>
 </body>
+
 </html>

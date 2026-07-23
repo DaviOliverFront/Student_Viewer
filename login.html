@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +13,28 @@
 </head>
 
 <body>
-    <main>
-        <form action="" method="post">
-            <label for="idemail">Email:</label>
-            <input type="email" name="email" id="idemail">
-            <label for="idsenha">Senha:</label>
-            <input type="password" name="senha" id="idsenha">
-        </form>
+    <main class="container d-flex justify-content-left align-items-center vh-100">
+        <div class="card p-4 shadow login">
+            <img src="android-chrome-192x192.png" alt="image" class="d-block mx-auto">
+
+            <form action="index.html" method="GET">
+                <div class="mb-3 mt-3">
+                    <label for="idemail" class="form-label">Email:</label>
+                    <input type="email" class="form-control" name="email" id="idemail" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="idsenha" class="form-label">Senha:</label>
+                    <input type="password" class="form-control" name="senha" id="idsenha" required>
+                    <div class="form-text text-end text-white">Esqueci minha senha</div>
+                </div>
+
+                <button type="submit" class="btn btn-primary text-white w-100 border-0" style="background-color: var(--bs-success-bg-subtle);">
+                    <strong>Entrar</strong>
+                </button>
+            </form>
+        </div>
     </main>
 </body>
+
 </html>

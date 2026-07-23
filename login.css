@@ -1,7 +1,27 @@
 
-   body{
+body {
     background-image: url('background.png');
     background-repeat: no-repeat; /* Impede que a imagem se repita */
     background-size: cover;       /* Faz a imagem cobrir todo o espaço proporcionalmente */
     background-position: center;  /* Centraliza a imagem no elemento */
+    min-height: 100vh;
+}
+
+main > div >img{
+    width: 72px;
+}
+
+.login{
+    width: 450px;
+    background-color: #6A7553;
+}
+
+label{
+    color: #FFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #002918 !important;
 }
